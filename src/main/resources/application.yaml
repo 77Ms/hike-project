@@ -1,0 +1,33 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${ip}:3306/springboot?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      update-strategy: IGNORED
+
+ip: 127.0.0.1
+
+ai:
+  base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  api-key: sk-ws-H.EDIRIYY.cC62.MEQCIB5Q12WQI-dAWc7Da94nwTNaFKWuE9tWI71y7Qmpr4q3AiB_U_B1goaFeTGo3v2ls2AgA9cE61ONNJKyDyeJTXPw_A
+  model: qwen-plus
+  embedding-model: text-embedding-v3
+  temperature: 0.5
+  max-tokens: 4096
+  top-k: 5
+  max-history: 10

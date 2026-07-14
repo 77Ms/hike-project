@@ -1,0 +1,33 @@
+# Java
+*.class
+*.jar
+*.war
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.swp
+*.swo
+.vscode/
+
+# Maven
+log/
+tmp/
+
+# Node / Vue
+node_modules/
+vue/node_modules/
+vue/dist/
+vue/build/
+dist/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
