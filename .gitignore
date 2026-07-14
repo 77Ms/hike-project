@@ -1,0 +1,16 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+
+node_modules/
+vue/node_modules/
+vue/dist/
+vue/yarn.lock
+
+.idea/
+*.iml
+
+.DS_Store
+Thumbs.db
