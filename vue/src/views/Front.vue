@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { projectName } from '../../config/config.default'
 import { User, Lock, SwitchButton, House, VideoCamera, Message, PictureRounded, Location } from '@element-plus/icons-vue'
+import AIChatBot from '@/components/AIChatBot.vue'
 import { ElMessage } from 'element-plus'
 
 // 路由实例
@@ -201,6 +202,8 @@ const clearSearch =()=> {
       <p>© {{ new Date().getFullYear() }} {{ projectName }}. 保留所有权利</p>
     </footer>
   </div>
+
+  <AIChatBot />
 </template>
 
 <style lang="scss" scoped>

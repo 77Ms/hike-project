@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import {User, Lock, SwitchButton, Setting,House,Message,Notebook,UserFilled,ChatLineRound,Star,Avatar,WarningFilled} from '@element-plus/icons-vue'
+import AIChatBot from '@/components/AIChatBot.vue'
 import { ElMessage } from 'element-plus'
 import { projectName } from '../../config/config.default'
 
@@ -224,6 +225,8 @@ const handleUpdateAccount = (updatedAccount) => {
     </el-drawer>
 
   </div>
+
+  <AIChatBot />
 </template>
 
 <style lang="scss" scoped>
